@@ -70,7 +70,7 @@ const createInfoMarkup = data => {
       <p class='country-text'><span class='country-text-bold'>Languages:</span> ${Object.values(
         languages
       )}</p>`
-  );
+  ).join('');
 };
 
 searchEl.addEventListener('input', debounce(inputHandler, DEBOUNCE_DELAY));
